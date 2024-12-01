@@ -1,44 +1,42 @@
-/* Aseguramos que no haya márgenes ni rellenos que afecten la visualización */
+/* Estilo general */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Contenedor principal con la imagen de fondo */
+/* Fondo de la página */
 .background-container {
     width: 100vw;
     height: 100vh;
     background-image: url('https://i.imgur.com/tU26cZL.jpg'); /* Imagen de fondo */
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    position: relative; /* Necesario para posicionamiento absoluto */
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
-/* Estilo común para las imágenes */
+/* Estilo de imágenes */
 img {
-    width: 250px;  /* Aumentado el tamaño */
+    width: 250px;
     height: auto;
-    border-radius: 8px; /* Bordes redondeados opcionales */
+    border-radius: 8px;
 }
 
-/* Posicionamiento de la imagen superior derecha */
+/* Posiciones */
 .top-right {
     position: absolute;
-    top: 12%; /* Ajustado para alinearse con el área verde */
+    top: 12%;
     right: 10%;
 }
 
-/* Posicionamiento de la imagen izquierda */
 .left {
     position: absolute;
-    bottom: 55%; /* Ajustado para alinearse con el área verde */
+    bottom: 55%;
     left: 12%;
 }
 
-/* Posicionamiento de la imagen inferior derecha */
 .bottom-right {
     position: absolute;
-    bottom: 10%; /* Ajustado para alinearse con el área verde */
+    bottom: 10%;
     right: 12%;
 }
