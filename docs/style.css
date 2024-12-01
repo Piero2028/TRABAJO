@@ -1,73 +1,74 @@
-/* Aseguramos que no haya márgenes ni rellenos que afecten la visualización */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fondo de la página */
 .background-container {
     width: 100vw;
     height: 100vh;
-    background-image: url('https://i.imgur.com/tU26cZL.jpg'); /* Imagen de fondo */
-    background-color: #f0f0f0; /* Color de respaldo */
+    background-image: url('https://i.imgur.com/tU26cZL.jpg');
     background-size: cover;
     background-position: center;
-    position: relative; /* Necesario para posicionamiento absoluto */
+    position: relative;
 }
 
-/* Estilo de imágenes */
 img {
-    width: 250px; /* Tamaño de las imágenes */
+    width: 200px;
     height: auto;
-    border-radius: 8px; /* Bordes redondeados */
+    border-radius: 8px;
 }
 
-/* Posiciones de las imágenes */
-.top-right {
-    position: absolute;
-    top: 12%;
-    right: 10%;
+.text, .whatsapp-number {
+    font-family: Arial, sans-serif;
+    text-shadow: 1px 1px 2px #ffffff, -1px -1px 2px #ffffff, 1px -1px 2px #ffffff, -1px 1px 2px #ffffff;
 }
 
-.left {
-    position: absolute;
-    top: 30%; /* Ajustado para dar espacio arriba */
-    left: 12%;
+.text {
+    font-size: 18px;
+    color: #000000; /* Texto negro */
 }
 
-/* Imagen debajo de la izquierda */
-.below-left {
-    position: absolute;
-    top: 60%; /* Colocada debajo de la imagen izquierda */
-    left: 12%; /* Alineada horizontalmente con la imagen izquierda */
-    width: 250px; /* Forzamos tamaño cuadrado */
-    height: 250px; /* Forzamos tamaño cuadrado */
+.whatsapp-number {
+    font-size: 18px; /* Tamaño de fuente */
+    color: #25d366; /* Verde de WhatsApp */
+    text-shadow: 1px 1px 2px #ffffff, -1px -1px 2px #ffffff, 1px -1px 2px #ffffff, -1px 1px 2px #ffffff; /* Contorno blanco */
 }
 
-.below-left img {
-    width: 100%; /* La imagen ocupa todo el div */
-    height: 100%;
-    object-fit: cover; /* Hace que la imagen se ajuste al cuadrado */
-}
-
-/* Posición y estilo del logo de WhatsApp */
 .bottom-right {
     position: absolute;
     bottom: 10%;
     right: 10%;
     display: flex;
     align-items: center;
-    gap: 8px; /* Espaciado entre el logo y el número */
+    gap: 8px;
 }
 
 .bottom-right img {
-    width: 40px; /* Tamaño del logo de WhatsApp */
+    width: 40px;
     height: auto;
 }
 
-.whatsapp-number {
-    font-size: 18px; /* Tamaño de fuente */
-    color: #25d366; /* Color verde de WhatsApp */
-    font-family: Arial, sans-serif;
+.content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
+.top-right {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.left {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.below-left {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+
