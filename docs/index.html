@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba Imagen de Fondo</title>
+    <title>Diseño con Imágenes y Texto</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="background-container">
-        <!-- Imagen superior derecha -->
-        <div class="top-right">
-            <img src="https://i.imgur.com/HIUPL8z.jpg" alt="Imagen Top Right">
-        </div>
-        <!-- Imagen izquierda -->
         <div class="left">
-            <img src="https://i.imgur.com/CSqHiwB.jpg" alt="Imagen Left">
+            <div class="content">
+                <p class="text">Texto superior izquierdo</p>
+                <img src="https://i.imgur.com/HIUPL8z.jpg" alt="Imagen Top Right">
+            </div>
         </div>
-        <!-- Imagen debajo de la izquierda -->
+
+        <div class="top-right">
+            <div class="content">
+                <img src="https://i.imgur.com/CSqHiwB.jpg" alt="Imagen Left">
+                <p class="text">Texto al lado derecho</p>
+            </div>
+        </div>
+
         <div class="below-left">
-            <img src="https://i.imgur.com/1NSVjB7.jpg" alt="Imagen Below Left">
+            <div class="content">
+                <img src="https://i.imgur.com/1NSVjB7.jpg" alt="Imagen Below Left">
+                <p class="text">Texto al lado de la imagen inferior</p>
+            </div>
         </div>
-        <!-- Logo de WhatsApp y número en la parte inferior derecha -->
         <div class="bottom-right">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp_logo.svg" alt="Logo WhatsApp">
-            <div class="whatsapp-number">123123123</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/640px-WhatsApp_icon.png">
+            <div class="whatsapp-number">+51 972 270 885</div>
         </div>
     </div>
 </body>
