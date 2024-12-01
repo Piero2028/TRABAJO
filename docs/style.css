@@ -12,6 +12,13 @@ body {
     position: relative;
 }
 
+/* Estilo común para las imágenes */
+img {
+    width: 200px;  /* Tamaño fijo para todas las imágenes */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados opcionales */
+}
+
 /* Posicionamiento de la imagen superior derecha */
 .top-right {
     position: absolute;
@@ -24,7 +31,7 @@ body {
     position: absolute;
     top: 50%;
     left: 10px;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /* Centra verticalmente la imagen */
 }
 
 /* Posicionamiento de la imagen inferior izquierda */
@@ -34,13 +41,13 @@ body {
     left: 10px;
 }
 
-/* Estilo de la imagen del logo de WhatsApp */
+/* Estilo del logo de WhatsApp */
 .bottom-left img {
-    width: 40px; /* Ajusta el tamaño de la imagen */
+    width: 40px; /* Ajusta el tamaño del logo */
     height: auto;
 }
 
-/* Estilo del número de WhatsApp */
+/* Estilo para el número de WhatsApp */
 .whatsapp-number {
     font-size: 14px;
     color: #25d366; /* Color verde de WhatsApp */
@@ -53,11 +60,3 @@ body {
     bottom: 10px;
     right: 10px;
 }
-
-/* Opcional: ajustes generales para las imágenes */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px; /* Para darle bordes redondeados si lo deseas */
-}
-
