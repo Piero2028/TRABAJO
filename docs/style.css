@@ -20,7 +20,7 @@
 img {
     width: 250px; /* Tamaño de las imágenes */
     height: auto;
-    border-radius: 8px;
+    border-radius: 8px; /* Bordes redondeados */
 }
 
 /* Posiciones de las imágenes */
@@ -32,14 +32,23 @@ img {
 
 .left {
     position: absolute;
-    bottom: 55%;
+    top: 30%; /* Ajustado para dar espacio arriba */
     left: 12%;
 }
 
-.bottom-left {
+/* Imagen debajo de la izquierda */
+.below-left {
     position: absolute;
-    bottom: 10%;
-    left: 10%;
+    top: 60%; /* Colocada debajo de la imagen izquierda */
+    left: 12%; /* Alineada horizontalmente con la imagen izquierda */
+    width: 250px; /* Forzamos tamaño cuadrado */
+    height: 250px; /* Forzamos tamaño cuadrado */
+}
+
+.below-left img {
+    width: 100%; /* La imagen ocupa todo el div */
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen se ajuste al cuadrado */
 }
 
 /* Posición y estilo del logo de WhatsApp */
