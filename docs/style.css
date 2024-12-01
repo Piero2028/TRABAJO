@@ -1,4 +1,4 @@
-/* Estilo general */
+/* Aseguramos que no haya márgenes ni rellenos que afecten la visualización */
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +10,15 @@
     width: 100vw;
     height: 100vh;
     background-image: url('https://i.imgur.com/tU26cZL.jpg'); /* Imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    background-color: #f0f0f0; /* Color de respaldo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    position: relative; /* Necesario para posicionamiento absoluto */
 }
 
 /* Estilo de imágenes */
 img {
-    width: 250px;
+    width: 250px; /* Tamaño de las imágenes */
     height: auto;
     border-radius: 8px;
 }
